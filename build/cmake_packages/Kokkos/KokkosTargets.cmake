@@ -1,0 +1,1 @@
+include(/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/KokkosTargets.cmake)

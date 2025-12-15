@@ -127,6 +127,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/01_vector_add.dir/DependInfo.cmake"
   "CMakeFiles/02_dot_product.dir/DependInfo.cmake"
   "CMakeFiles/03_spmv.dir/DependInfo.cmake"
+  "CMakeFiles/04_benchmark.dir/DependInfo.cmake"
   "kokkos/CMakeFiles/Experimental.dir/DependInfo.cmake"
   "kokkos/CMakeFiles/Nightly.dir/DependInfo.cmake"
   "kokkos/CMakeFiles/Continuous.dir/DependInfo.cmake"

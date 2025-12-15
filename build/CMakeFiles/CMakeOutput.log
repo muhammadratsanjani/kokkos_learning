@@ -460,3 +460,18 @@ gmake[1]: Leaving directory '/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningp
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test KOKKOS_LINK_OPTIONS_CHECK succeeded with the following output:
+Change Dir: /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_339bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_339bd.dir/build.make CMakeFiles/cmTC_339bd.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_339bd.dir/src.cxx.o
+/usr/bin/c++ -DKOKKOS_LINK_OPTIONS_CHECK   -o CMakeFiles/cmTC_339bd.dir/src.cxx.o -c /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_339bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_339bd.dir/link.txt --verbose=1
+/usr/bin/c++ -DKOKKOS_DEPENDENCE CMakeFiles/cmTC_339bd.dir/src.cxx.o -o cmTC_339bd 
+gmake[1]: Leaving directory '/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

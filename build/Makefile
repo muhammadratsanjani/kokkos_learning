@@ -201,6 +201,19 @@ depend:
 .PHONY : 03_spmv/fast
 
 #=============================================================================
+# Target rules for targets named 04_benchmark
+
+# Build rule for target.
+04_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 04_benchmark
+.PHONY : 04_benchmark
+
+# fast build rule for target.
+04_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_benchmark.dir/build.make CMakeFiles/04_benchmark.dir/build
+.PHONY : 04_benchmark/fast
+
+#=============================================================================
 # Target rules for targets named Experimental
 
 # Build rule for target.
@@ -714,6 +727,30 @@ kokkossimd/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/03_spmv.dir/build.make CMakeFiles/03_spmv.dir/03_capstone/simple_spmv.cpp.s
 .PHONY : 03_capstone/simple_spmv.cpp.s
 
+04_benchmark/benchmark_spmv.o: 04_benchmark/benchmark_spmv.cpp.o
+.PHONY : 04_benchmark/benchmark_spmv.o
+
+# target to build an object file
+04_benchmark/benchmark_spmv.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_benchmark.dir/build.make CMakeFiles/04_benchmark.dir/04_benchmark/benchmark_spmv.cpp.o
+.PHONY : 04_benchmark/benchmark_spmv.cpp.o
+
+04_benchmark/benchmark_spmv.i: 04_benchmark/benchmark_spmv.cpp.i
+.PHONY : 04_benchmark/benchmark_spmv.i
+
+# target to preprocess a source file
+04_benchmark/benchmark_spmv.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_benchmark.dir/build.make CMakeFiles/04_benchmark.dir/04_benchmark/benchmark_spmv.cpp.i
+.PHONY : 04_benchmark/benchmark_spmv.cpp.i
+
+04_benchmark/benchmark_spmv.s: 04_benchmark/benchmark_spmv.cpp.s
+.PHONY : 04_benchmark/benchmark_spmv.s
+
+# target to generate assembly for a file
+04_benchmark/benchmark_spmv.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_benchmark.dir/build.make CMakeFiles/04_benchmark.dir/04_benchmark/benchmark_spmv.cpp.s
+.PHONY : 04_benchmark/benchmark_spmv.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -758,6 +795,7 @@ help:
 	@echo "... 01_vector_add"
 	@echo "... 02_dot_product"
 	@echo "... 03_spmv"
+	@echo "... 04_benchmark"
 	@echo "... impl_git_version"
 	@echo "... kokkosalgorithms"
 	@echo "... kokkoscontainers"
@@ -772,6 +810,9 @@ help:
 	@echo "... 03_capstone/simple_spmv.o"
 	@echo "... 03_capstone/simple_spmv.i"
 	@echo "... 03_capstone/simple_spmv.s"
+	@echo "... 04_benchmark/benchmark_spmv.o"
+	@echo "... 04_benchmark/benchmark_spmv.i"
+	@echo "... 04_benchmark/benchmark_spmv.s"
 .PHONY : help
 
 

@@ -88,32 +88,32 @@ set_target_properties(Kokkos::kokkos PROPERTIES
   INTERFACE_LINK_LIBRARIES "Kokkos::kokkoscore;Kokkos::kokkoscontainers;Kokkos::kokkosalgorithms;Kokkos::kokkossimd"
 )
 
-# Import target "Kokkos::kokkoscore" for configuration ""
-set_property(TARGET Kokkos::kokkoscore APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "Kokkos::kokkoscore" for configuration "Release"
+set_property(TARGET Kokkos::kokkoscore APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Kokkos::kokkoscore PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/core/src/libkokkoscore.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/core/src/libkokkoscore.a"
   )
 
-# Import target "Kokkos::kokkoscontainers" for configuration ""
-set_property(TARGET Kokkos::kokkoscontainers APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "Kokkos::kokkoscontainers" for configuration "Release"
+set_property(TARGET Kokkos::kokkoscontainers APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Kokkos::kokkoscontainers PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/containers/src/libkokkoscontainers.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/containers/src/libkokkoscontainers.a"
   )
 
-# Import target "Kokkos::kokkosalgorithms" for configuration ""
-set_property(TARGET Kokkos::kokkosalgorithms APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "Kokkos::kokkosalgorithms" for configuration "Release"
+set_property(TARGET Kokkos::kokkosalgorithms APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Kokkos::kokkosalgorithms PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/algorithms/src/libkokkosalgorithms.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/algorithms/src/libkokkosalgorithms.a"
   )
 
-# Import target "Kokkos::kokkossimd" for configuration ""
-set_property(TARGET Kokkos::kokkossimd APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "Kokkos::kokkossimd" for configuration "Release"
+set_property(TARGET Kokkos::kokkossimd APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Kokkos::kokkossimd PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/simd/src/libkokkossimd.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/simd/src/libkokkossimd.a"
   )
 
 # This file does not depend on other imported targets which have

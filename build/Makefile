@@ -214,6 +214,19 @@ depend:
 .PHONY : 04_benchmark/fast
 
 #=============================================================================
+# Target rules for targets named 05_reordering
+
+# Build rule for target.
+05_reordering: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 05_reordering
+.PHONY : 05_reordering
+
+# fast build rule for target.
+05_reordering/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/build
+.PHONY : 05_reordering/fast
+
+#=============================================================================
 # Target rules for targets named Experimental
 
 # Build rule for target.
@@ -751,6 +764,30 @@ kokkossimd/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_benchmark.dir/build.make CMakeFiles/04_benchmark.dir/04_benchmark/benchmark_spmv.cpp.s
 .PHONY : 04_benchmark/benchmark_spmv.cpp.s
 
+05_reordering/spmv_metis.o: 05_reordering/spmv_metis.cpp.o
+.PHONY : 05_reordering/spmv_metis.o
+
+# target to build an object file
+05_reordering/spmv_metis.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/05_reordering/spmv_metis.cpp.o
+.PHONY : 05_reordering/spmv_metis.cpp.o
+
+05_reordering/spmv_metis.i: 05_reordering/spmv_metis.cpp.i
+.PHONY : 05_reordering/spmv_metis.i
+
+# target to preprocess a source file
+05_reordering/spmv_metis.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/05_reordering/spmv_metis.cpp.i
+.PHONY : 05_reordering/spmv_metis.cpp.i
+
+05_reordering/spmv_metis.s: 05_reordering/spmv_metis.cpp.s
+.PHONY : 05_reordering/spmv_metis.s
+
+# target to generate assembly for a file
+05_reordering/spmv_metis.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/05_reordering/spmv_metis.cpp.s
+.PHONY : 05_reordering/spmv_metis.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -796,6 +833,7 @@ help:
 	@echo "... 02_dot_product"
 	@echo "... 03_spmv"
 	@echo "... 04_benchmark"
+	@echo "... 05_reordering"
 	@echo "... impl_git_version"
 	@echo "... kokkosalgorithms"
 	@echo "... kokkoscontainers"
@@ -813,6 +851,9 @@ help:
 	@echo "... 04_benchmark/benchmark_spmv.o"
 	@echo "... 04_benchmark/benchmark_spmv.i"
 	@echo "... 04_benchmark/benchmark_spmv.s"
+	@echo "... 05_reordering/spmv_metis.o"
+	@echo "... 05_reordering/spmv_metis.i"
+	@echo "... 05_reordering/spmv_metis.s"
 .PHONY : help
 
 

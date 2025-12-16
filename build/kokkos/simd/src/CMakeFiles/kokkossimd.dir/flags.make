@@ -6,5 +6,5 @@ CXX_DEFINES = -DKOKKOS_DEPENDENCE
 
 CXX_INCLUDES = -I/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/simd/src -I/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/kokkos/simd/src -I/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos -I/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/core/src -I/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/kokkos/core/src -isystem /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/kokkos/tpls/desul/include -isystem /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/kokkos/tpls/mdspan/include
 
-CXX_FLAGS = -fopenmp -std=gnu++20
+CXX_FLAGS =  -O3 -march=native -O3 -DNDEBUG -fopenmp -std=gnu++20
 

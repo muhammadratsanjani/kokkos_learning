@@ -67,6 +67,7 @@ all: CMakeFiles/01_vector_add.dir/all
 all: CMakeFiles/02_dot_product.dir/all
 all: CMakeFiles/03_spmv.dir/all
 all: CMakeFiles/04_benchmark.dir/all
+all: CMakeFiles/05_reordering.dir/all
 all: kokkos/all
 .PHONY : all
 
@@ -79,6 +80,7 @@ clean: CMakeFiles/01_vector_add.dir/clean
 clean: CMakeFiles/02_dot_product.dir/clean
 clean: CMakeFiles/03_spmv.dir/clean
 clean: CMakeFiles/04_benchmark.dir/clean
+clean: CMakeFiles/05_reordering.dir/clean
 clean: kokkos/clean
 .PHONY : clean
 
@@ -408,6 +410,35 @@ CMakeFiles/04_benchmark.dir/rule: cmake_check_build_system
 CMakeFiles/04_benchmark.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_benchmark.dir/build.make CMakeFiles/04_benchmark.dir/clean
 .PHONY : CMakeFiles/04_benchmark.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/05_reordering.dir
+
+# All Build rule for target.
+CMakeFiles/05_reordering.dir/all: kokkos/core/src/CMakeFiles/kokkoscore.dir/all
+CMakeFiles/05_reordering.dir/all: kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/all
+CMakeFiles/05_reordering.dir/all: kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/all
+CMakeFiles/05_reordering.dir/all: kokkos/simd/src/CMakeFiles/kokkossimd.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=9,10 "Built target 05_reordering"
+.PHONY : CMakeFiles/05_reordering.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/05_reordering.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/05_reordering.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles 0
+.PHONY : CMakeFiles/05_reordering.dir/rule
+
+# Convenience name for target.
+05_reordering: CMakeFiles/05_reordering.dir/rule
+.PHONY : 05_reordering
+
+# clean rule for target.
+CMakeFiles/05_reordering.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/clean
+.PHONY : CMakeFiles/05_reordering.dir/clean
 
 #=============================================================================
 # Target rules for target kokkos/CMakeFiles/Experimental.dir
@@ -1170,7 +1201,7 @@ kokkos/CMakeFiles/AlwaysCheckGit.dir/clean:
 kokkos/CMakeFiles/impl_git_version.dir/all: kokkos/CMakeFiles/AlwaysCheckGit.dir/all
 	$(MAKE) $(MAKESILENT) -f kokkos/CMakeFiles/impl_git_version.dir/build.make kokkos/CMakeFiles/impl_git_version.dir/depend
 	$(MAKE) $(MAKESILENT) -f kokkos/CMakeFiles/impl_git_version.dir/build.make kokkos/CMakeFiles/impl_git_version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=9,10 "Built target impl_git_version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=11,12 "Built target impl_git_version"
 .PHONY : kokkos/CMakeFiles/impl_git_version.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1196,7 +1227,7 @@ kokkos/CMakeFiles/impl_git_version.dir/clean:
 kokkos/core/src/CMakeFiles/kokkoscore.dir/all:
 	$(MAKE) $(MAKESILENT) -f kokkos/core/src/CMakeFiles/kokkoscore.dir/build.make kokkos/core/src/CMakeFiles/kokkoscore.dir/depend
 	$(MAKE) $(MAKESILENT) -f kokkos/core/src/CMakeFiles/kokkoscore.dir/build.make kokkos/core/src/CMakeFiles/kokkoscore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target kokkoscore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target kokkoscore"
 .PHONY : kokkos/core/src/CMakeFiles/kokkoscore.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1222,7 +1253,7 @@ kokkos/core/src/CMakeFiles/kokkoscore.dir/clean:
 kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/all: kokkos/core/src/CMakeFiles/kokkoscore.dir/all
 	$(MAKE) $(MAKESILENT) -f kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/build.make kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/depend
 	$(MAKE) $(MAKESILENT) -f kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/build.make kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=13,14 "Built target kokkoscontainers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=15,16 "Built target kokkoscontainers"
 .PHONY : kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1248,7 +1279,7 @@ kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/clean:
 kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/all: kokkos/core/src/CMakeFiles/kokkoscore.dir/all
 	$(MAKE) $(MAKESILENT) -f kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/build.make kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/depend
 	$(MAKE) $(MAKESILENT) -f kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/build.make kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=11,12 "Built target kokkosalgorithms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=13,14 "Built target kokkosalgorithms"
 .PHONY : kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1274,7 +1305,7 @@ kokkos/algorithms/src/CMakeFiles/kokkosalgorithms.dir/clean:
 kokkos/simd/src/CMakeFiles/kokkossimd.dir/all: kokkos/core/src/CMakeFiles/kokkoscore.dir/all
 	$(MAKE) $(MAKESILENT) -f kokkos/simd/src/CMakeFiles/kokkossimd.dir/build.make kokkos/simd/src/CMakeFiles/kokkossimd.dir/depend
 	$(MAKE) $(MAKESILENT) -f kokkos/simd/src/CMakeFiles/kokkossimd.dir/build.make kokkos/simd/src/CMakeFiles/kokkossimd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=33,34 "Built target kokkossimd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles --progress-num=35,36 "Built target kokkossimd"
 .PHONY : kokkos/simd/src/CMakeFiles/kokkossimd.dir/all
 
 # Build rule for subdir invocation for target.

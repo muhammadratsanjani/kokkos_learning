@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/kokkos/generated
 
-CXX_FLAGS = 
+CXX_FLAGS =  -O3 -march=native -O3 -DNDEBUG
 

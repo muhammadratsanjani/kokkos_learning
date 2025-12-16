@@ -2,6 +2,7 @@
 /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/02_dot_product.dir
 /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/03_spmv.dir
 /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/04_benchmark.dir
+/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/05_reordering.dir
 /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/list_install_components.dir

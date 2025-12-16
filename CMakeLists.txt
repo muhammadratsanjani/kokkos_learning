@@ -1,6 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 project(KokkosLearningPlan CXX)
 
+# --- PERFORMANCE FLAGS (CRITICAL) ---
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -march=native") # Paksa optimasi maksimal & instruksi CPU lokal
+
+
 # --- KONFIGURASI KOKKOS ---
 # Pastikan Kokkos sudah terinstall atau ada di subdirectory.
 # Cara paling mudah: git clone https://github.com/kokkos/kokkos.git di dalam folder ini
@@ -23,3 +30,16 @@ target_link_libraries(02_dot_product Kokkos::kokkos)
 # --- MODULE 3: SIMPLE SPMV (CAPSTONE) ---
 add_executable(03_spmv 03_capstone/simple_spmv.cpp)
 target_link_libraries(03_spmv Kokkos::kokkos)
+
+# --- MODULE 4: BENCHMARK SPMV (SCALING UP) ---
+add_executable(04_benchmark 04_benchmark/benchmark_spmv.cpp)
+target_link_libraries(04_benchmark Kokkos::kokkos)
+
+# --- MODULE 5: REORDERING EXPERIMENT (METIS) ---
+find_library(METIS_LIB metis)
+if(NOT METIS_LIB)
+    message(WARNING "Metis library not found! Module 5 might fail to link. Install with: sudo apt install libmetis-dev")
+endif()
+
+add_executable(05_reordering 05_reordering/spmv_metis.cpp)
+target_link_libraries(05_reordering Kokkos::kokkos ${METIS_LIB})

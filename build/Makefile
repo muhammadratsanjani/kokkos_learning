@@ -227,6 +227,19 @@ depend:
 .PHONY : 05_reordering/fast
 
 #=============================================================================
+# Target rules for targets named 06_gpu_ready
+
+# Build rule for target.
+06_gpu_ready: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 06_gpu_ready
+.PHONY : 06_gpu_ready
+
+# fast build rule for target.
+06_gpu_ready/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/06_gpu_ready.dir/build.make CMakeFiles/06_gpu_ready.dir/build
+.PHONY : 06_gpu_ready/fast
+
+#=============================================================================
 # Target rules for targets named Experimental
 
 # Build rule for target.
@@ -788,6 +801,30 @@ kokkossimd/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/05_reordering.dir/build.make CMakeFiles/05_reordering.dir/05_reordering/spmv_metis.cpp.s
 .PHONY : 05_reordering/spmv_metis.cpp.s
 
+06_gpu_preparation/spmv_gpu.o: 06_gpu_preparation/spmv_gpu.cpp.o
+.PHONY : 06_gpu_preparation/spmv_gpu.o
+
+# target to build an object file
+06_gpu_preparation/spmv_gpu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/06_gpu_ready.dir/build.make CMakeFiles/06_gpu_ready.dir/06_gpu_preparation/spmv_gpu.cpp.o
+.PHONY : 06_gpu_preparation/spmv_gpu.cpp.o
+
+06_gpu_preparation/spmv_gpu.i: 06_gpu_preparation/spmv_gpu.cpp.i
+.PHONY : 06_gpu_preparation/spmv_gpu.i
+
+# target to preprocess a source file
+06_gpu_preparation/spmv_gpu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/06_gpu_ready.dir/build.make CMakeFiles/06_gpu_ready.dir/06_gpu_preparation/spmv_gpu.cpp.i
+.PHONY : 06_gpu_preparation/spmv_gpu.cpp.i
+
+06_gpu_preparation/spmv_gpu.s: 06_gpu_preparation/spmv_gpu.cpp.s
+.PHONY : 06_gpu_preparation/spmv_gpu.s
+
+# target to generate assembly for a file
+06_gpu_preparation/spmv_gpu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/06_gpu_ready.dir/build.make CMakeFiles/06_gpu_ready.dir/06_gpu_preparation/spmv_gpu.cpp.s
+.PHONY : 06_gpu_preparation/spmv_gpu.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -834,6 +871,7 @@ help:
 	@echo "... 03_spmv"
 	@echo "... 04_benchmark"
 	@echo "... 05_reordering"
+	@echo "... 06_gpu_ready"
 	@echo "... impl_git_version"
 	@echo "... kokkosalgorithms"
 	@echo "... kokkoscontainers"
@@ -854,6 +892,9 @@ help:
 	@echo "... 05_reordering/spmv_metis.o"
 	@echo "... 05_reordering/spmv_metis.i"
 	@echo "... 05_reordering/spmv_metis.s"
+	@echo "... 06_gpu_preparation/spmv_gpu.o"
+	@echo "... 06_gpu_preparation/spmv_gpu.i"
+	@echo "... 06_gpu_preparation/spmv_gpu.s"
 .PHONY : help
 
 

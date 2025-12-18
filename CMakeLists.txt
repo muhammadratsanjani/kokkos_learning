@@ -43,3 +43,7 @@ endif()
 
 add_executable(05_reordering 05_reordering/spmv_metis.cpp)
 target_link_libraries(05_reordering Kokkos::kokkos ${METIS_LIB})
+
+# --- MODULE 6: GPU PREPARATION (TeamPolicy) ---
+add_executable(06_gpu_ready 06_gpu_preparation/spmv_gpu.cpp)
+target_link_libraries(06_gpu_ready Kokkos::kokkos)

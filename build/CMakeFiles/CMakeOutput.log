@@ -441,3 +441,18 @@ gmake[1]: Leaving directory '/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningp
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test KOKKOS_LINK_OPTIONS_CHECK succeeded with the following output:
+Change Dir: /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b89b3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b89b3.dir/build.make CMakeFiles/cmTC_b89b3.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b89b3.dir/src.cxx.o
+/usr/bin/c++ -DKOKKOS_LINK_OPTIONS_CHECK   -o CMakeFiles/cmTC_b89b3.dir/src.cxx.o -c /mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b89b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b89b3.dir/link.txt --verbose=1
+/usr/bin/c++ -DKOKKOS_DEPENDENCE CMakeFiles/cmTC_b89b3.dir/src.cxx.o -o cmTC_b89b3 
+gmake[1]: Leaving directory '/mnt/c/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

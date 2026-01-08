@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex draft_paper"] 0 "draft_paper.aux" "draft_paper.bbl" "draft_paper" 1766447972.17184 0
+["bibtex draft_paper"] 0 "draft_paper.aux" "draft_paper.bbl" "draft_paper" 1766973702.6669 0
   "c:/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1766394805 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "draft_paper.aux" 0 -1 0 "pdflatex"
   "references.bib" 0 -1 0 ""
@@ -7,8 +7,8 @@
   "draft_paper.bbl"
   "draft_paper.blg"
   (rewritten before read)
-["pdflatex"] 1766447968.54392 "c:/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/paper/draft_paper.tex" "draft_paper.pdf" "draft_paper" 1766447972.17586 0
-  "c:/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/paper/draft_paper.tex" 1766447962 5029 a907df49cd9f374e48376f9f4ac2363a ""
+["pdflatex"] 1766973699.73426 "c:/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/paper/draft_paper.tex" "draft_paper.pdf" "draft_paper" 1766973702.66965 0
+  "c:/Users/Acer/Documents/2025/4.kokkos/learningprogress/kokkos_learning/paper/draft_paper.tex" 1766973691 5378 79585e7c9622f685dda57acec4ceaa35 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1766390260 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1766392398 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1766389046 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -40,9 +40,7 @@
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1766383142 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1766383142 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1766383142 35752 024fb6c41858982481f6968b5fc26508 ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1766383142 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1766383142 32762 7fee39e011c23b3589931effd97b9702 ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1766383142 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1766383142 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1766383142 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1766383142 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
@@ -98,9 +96,9 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1766411586 5587484 30eee748fa419a911c40b0c750dd21ba ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1766411873 3635698 e8fcd1f72805e63efd1fc06228703ee1 ""
   "c:/texlive/2025/texmf.cnf" 1766411543 713 e69b156964470283e0530f5060668171 ""
-  "draft_paper.aux" 1766447970 1111 db5ac93aef3b2f9d3f7e751bdc6cbfe8 "pdflatex"
+  "draft_paper.aux" 1766973701 1153 a112341012aac03e09bc00bfa381434a "pdflatex"
   "draft_paper.bbl" 0 -1 0 "bibtex draft_paper"
-  "draft_paper.tex" 1766447962 5029 a907df49cd9f374e48376f9f4ac2363a ""
+  "draft_paper.tex" 1766973691 5378 79585e7c9622f685dda57acec4ceaa35 ""
   (generated)
   "draft_paper.aux"
   "draft_paper.log"

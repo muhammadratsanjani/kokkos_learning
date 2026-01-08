@@ -17,7 +17,7 @@ I conducted a benchmark on a standard workstation (CPU OpenMP Backend) and NVIDI
 
 | Matrix Size | Hardware | Method | Time (s) | GFLOPs | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **512k (80^3)** | CPU (Ryzen/Intel) | OpenMP | 0.051 | **2.53** | Cache-friendly |
+| **512k (80^3)** | CPU (Intel Core i7-1165G7) | OpenMP | 0.051 | **2.53** | Cache-friendly |
 | | GPU (Tesla T4) | Naive Cuda | 0.015 | **0.46** | Memory Latency Bound! |
 | **3.3M (150^3)** | CPU | OpenMP | 0.098 | 0.41 | Bandwidth Bound |
 
